@@ -1,5 +1,5 @@
 # Open-virtual-shaver
-A open-source prankster app.
+A open-source prankster app written in GDscript (GODOT engine).
 
 Are you tired of ads when you are just trying to have fun with your friends?
 
