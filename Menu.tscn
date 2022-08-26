@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Fonts/Dynamicfont_body.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Menu.gd" type="Script" id=2]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Fonts/prstart.ttf"
@@ -12,6 +13,7 @@ font_data = SubResource( 1 )
 [node name="Settings_menu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 2 )
 
 [node name="Black_Background" type="ColorRect" parent="."]
 anchor_left = 0.5
@@ -62,12 +64,27 @@ kaycke@protonmail.com"
 align = 1
 valign = 1
 
-[node name="Button" type="Button" parent="Black_Background/Panel"]
+[node name="Text_Settings3" type="Label" parent="Black_Background/Panel"]
 anchor_left = 0.5
-anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -337.0
-margin_top = -135.0
-margin_right = 337.0
-margin_bottom = 135.0
+margin_left = -444.0
+margin_top = 138.0
+margin_right = 444.0
+margin_bottom = 387.0
+custom_fonts/font = ExtResource( 1 )
+text = "Shaving button mode:"
+align = 1
+valign = 1
+
+[node name="Change_mode_Button" type="Button" parent="Black_Background/Panel"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -346.0
+margin_top = 327.0
+margin_right = 346.0
+margin_bottom = 479.0
+custom_fonts/font = ExtResource( 1 )
+text = "Keep Pressed"
+icon_align = 1
+
+[connection signal="pressed" from="Black_Background/Panel/Change_mode_Button" to="." method="_on_Change_mode_Button_pressed"]
