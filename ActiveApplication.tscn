@@ -60,39 +60,33 @@ tracks/0/keys = {
 [node name="shaver_scene" type="Node2D"]
 position = Vector2( 539, 968 )
 
-[node name="turn_on_button" type="Button" parent="."]
-margin_left = -102.0
-margin_right = 141.0
-margin_bottom = 244.0
-action_mode = 0
-flat = true
-script = ExtResource( 4 )
-
-[node name="background" type="Sprite" parent="turn_on_button"]
-position = Vector2( 106, -7.5 )
-scale = Vector2( 8, 8 )
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 4, -7.5 )
+scale = Vector2( 8.16296, 8.16296 )
 texture = ExtResource( 1 )
 hframes = 8
 
-[node name="animation_on" type="AnimationPlayer" parent="turn_on_button/background"]
+[node name="animation_on" type="AnimationPlayer" parent="background"]
 anims/RESET = SubResource( 1 )
 anims/turn_off = SubResource( 3 )
 anims/turn_on = SubResource( 2 )
 
-[node name="shaver_body" type="Sprite" parent="turn_on_button"]
-position = Vector2( 99, 77 )
+[node name="shaver_audio" type="AudioStreamPlayer" parent="background"]
+stream = ExtResource( 5 )
+
+[node name="shaver_body" type="Sprite" parent="."]
+position = Vector2( -3, 77 )
 scale = Vector2( 9, 9 )
 texture = ExtResource( 2 )
 
-[node name="shaver_button" type="Sprite" parent="turn_on_button"]
-position = Vector2( 121, 122 )
-scale = Vector2( 9, 9 )
-texture = ExtResource( 3 )
-
-[node name="shaver_audio" type="AudioStreamPlayer" parent="turn_on_button"]
-stream = ExtResource( 5 )
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2( -119, -17 )
+scale = Vector2( 9.03226, 9.03226 )
+normal = ExtResource( 3 )
+script = ExtResource( 4 )
 
 [node name="Settings_Menu" parent="." instance=ExtResource( 7 )]
+visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -122,6 +116,6 @@ position = Vector2( 79, 80 )
 scale = Vector2( 5, 5 )
 texture = ExtResource( 6 )
 
-[connection signal="button_up" from="turn_on_button" to="turn_on_button" method="_on_turn_on_button_button_up"]
-[connection signal="pressed" from="turn_on_button" to="turn_on_button" method="_on_turn_on_button_pressed"]
+[connection signal="pressed" from="TouchScreenButton" to="TouchScreenButton" method="_on_TouchScreenButton_pressed"]
+[connection signal="released" from="TouchScreenButton" to="TouchScreenButton" method="_on_TouchScreenButton_released"]
 [connection signal="pressed" from="Button_Settings" to="Button_Settings" method="_on_Button_Settings_pressed"]
