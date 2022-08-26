@@ -1,0 +1,11 @@
+For the art, i used just pixel art images. So here is some informations about the sprites to be easier to edit, recreate and backup the sizes and arts of the project:
+
+Shaver sprite:
+
+Background Sprite:
+
+Turn-on Button:
+
+Settings Button:
+
+Change turn-on mode button:
