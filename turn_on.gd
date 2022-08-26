@@ -8,16 +8,13 @@ func _ready():
 
 func _on_TouchScreenButton_pressed():
 	get_parent().get_node("background/shaver_audio").play()
-	print("Button pressed")
 	get_parent().get_node("background/animation_on").play("turn_on")
 	Input.vibrate_handheld(500)
 	pressed_button = true
 
 
-
 func _on_TouchScreenButton_released():
 	get_parent().get_node("background/shaver_audio").stop()
-	print("Button released")
 	get_parent().get_node("background/animation_on").play("turn_off")
 	vib_duration = 0.5
 	pressed_button = false
