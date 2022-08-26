@@ -1,10 +1,12 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Fonts/Dynamicfont_body.tres" type="DynamicFont" id=1]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Fonts/prstart.ttf"
 
 [sub_resource type="DynamicFont" id=2]
-size = 74
+size = 70
 font_data = SubResource( 1 )
 
 [node name="Settings_menu" type="Control"]
@@ -41,6 +43,22 @@ margin_right = 392.0
 margin_bottom = 151.0
 custom_fonts/font = SubResource( 2 )
 text = "SETTINGS"
+align = 1
+valign = 1
+
+[node name="Text_Settings2" type="Label" parent="Black_Background/Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -444.0
+margin_top = -283.0
+margin_right = 444.0
+margin_bottom = -34.0
+custom_fonts/font = ExtResource( 1 )
+text = "Credits:
+Kaycke Nizer
+kaycke@protonmail.com"
 align = 1
 valign = 1
 
