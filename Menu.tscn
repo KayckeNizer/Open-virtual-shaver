@@ -48,7 +48,7 @@ text = "SETTINGS"
 align = 1
 valign = 1
 
-[node name="Text_Settings2" type="Label" parent="Black_Background/Panel"]
+[node name="Text_Credits" type="Label" parent="Black_Background/Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -64,7 +64,7 @@ kaycke@protonmail.com"
 align = 1
 valign = 1
 
-[node name="Text_Settings3" type="Label" parent="Black_Background/Panel"]
+[node name="Text_shaving_mode" type="Label" parent="Black_Background/Panel"]
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -444.0
@@ -73,6 +73,18 @@ margin_right = 444.0
 margin_bottom = 387.0
 custom_fonts/font = ExtResource( 1 )
 text = "Shaving button mode:"
+align = 1
+valign = 1
+
+[node name="Text_Vibration_mode" type="Label" parent="Black_Background/Panel"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -444.0
+margin_top = 438.0
+margin_right = 444.0
+margin_bottom = 687.0
+custom_fonts/font = ExtResource( 1 )
+text = "Vibration:"
 align = 1
 valign = 1
 
@@ -87,4 +99,15 @@ custom_fonts/font = ExtResource( 1 )
 text = "Keep Pressed"
 icon_align = 1
 
+[node name="Vibration_mode_Button" type="Button" parent="Black_Background/Panel"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -346.0
+margin_top = 618.0
+margin_right = 346.0
+margin_bottom = 770.0
+custom_fonts/font = ExtResource( 1 )
+text = "ON"
+
 [connection signal="pressed" from="Black_Background/Panel/Change_mode_Button" to="." method="_on_Change_mode_Button_pressed"]
+[connection signal="pressed" from="Black_Background/Panel/Vibration_mode_Button" to="." method="_on_Vibration_mode_Button_pressed"]
