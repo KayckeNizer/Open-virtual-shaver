@@ -76,12 +76,12 @@ anims/turn_on = SubResource( 2 )
 stream = ExtResource( 5 )
 
 [node name="shaver_body" type="Sprite" parent="."]
-position = Vector2( -3, 77 )
+position = Vector2( -3, 365 )
 scale = Vector2( 9, 9 )
 texture = ExtResource( 2 )
 
 [node name="Touch_button_on_off" type="TouchScreenButton" parent="."]
-position = Vector2( -119, -17 )
+position = Vector2( -129, -68 )
 scale = Vector2( 9.03226, 9.03226 )
 normal = ExtResource( 9 )
 pressed = ExtResource( 3 )
