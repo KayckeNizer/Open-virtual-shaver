@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/botao1.png-79bf89c4955c61451f6183a74e1ac6e5.stex"
+path="res://.import/background.png-07bf9a98f54331c7fb76b682c154dcc9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/botao1.png"
-dest_files=[ "res://.import/botao1.png-79bf89c4955c61451f6183a74e1ac6e5.stex" ]
+source_file="res://Assets/Sprites/background.png"
+dest_files=[ "res://.import/background.png-07bf9a98f54331c7fb76b682c154dcc9.stex" ]
 
 [params]
 

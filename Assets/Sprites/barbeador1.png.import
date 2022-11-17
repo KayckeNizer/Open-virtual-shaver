@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/button3.png-d9262ad57825e46f8667f30f81f5e918.stex"
+path="res://.import/barbeador1.png-d8e378589858b3cfaef2e3d7bc0b514d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/button3.png"
-dest_files=[ "res://.import/button3.png-d9262ad57825e46f8667f30f81f5e918.stex" ]
+source_file="res://Assets/Sprites/barbeador1.png"
+dest_files=[ "res://.import/barbeador1.png-d8e378589858b3cfaef2e3d7bc0b514d.stex" ]
 
 [params]
 

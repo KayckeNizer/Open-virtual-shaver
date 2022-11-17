@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/buttonoff.png-cf585c182d8ff2d44337e0aa0223198d.stex"
+path="res://.import/botao.png-0debe6ba84c4780e2c81fd23564a2e0a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/buttonoff.png"
-dest_files=[ "res://.import/buttonoff.png-cf585c182d8ff2d44337e0aa0223198d.stex" ]
+source_file="res://Assets/Sprites/botao.png"
+dest_files=[ "res://.import/botao.png-0debe6ba84c4780e2c81fd23564a2e0a.stex" ]
 
 [params]
 

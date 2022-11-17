@@ -1,14 +1,14 @@
 [gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://Assets/spritesheet_background.png" type="Texture" id=1]
-[ext_resource path="res://Assets/barbeador1.png" type="Texture" id=2]
-[ext_resource path="res://Assets/buttonon.png" type="Texture" id=3]
-[ext_resource path="res://turn_on.gd" type="Script" id=4]
-[ext_resource path="res://Assets/shaver_sound.ogg" type="AudioStream" id=5]
-[ext_resource path="res://Assets/config_icon.png" type="Texture" id=6]
-[ext_resource path="res://Menu.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Button_Settings.gd" type="Script" id=8]
-[ext_resource path="res://Assets/buttonoff.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Sprites/spritesheet_background.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Sprites/barbeador1.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Sprites/buttonon.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Scripts/turn_on.gd" type="Script" id=4]
+[ext_resource path="res://Assets/Sounds/shaver_sound.ogg" type="AudioStream" id=5]
+[ext_resource path="res://Assets/Sprites/config_icon.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Scenes/Menu.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Assets/Scripts/Button_Settings.gd" type="Script" id=8]
+[ext_resource path="res://Assets/Sprites/buttonoff.png" type="Texture" id=9]
 
 [sub_resource type="Animation" id=1]
 length = 0.001

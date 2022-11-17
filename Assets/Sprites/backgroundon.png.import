@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/backgroundoff.png-aa8e8ccbf3b3b2fe2eb6b102c7cd5881.stex"
+path="res://.import/backgroundon.png-aa5fa96295c5cdec6f9c846a09561323.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/backgroundoff.png"
-dest_files=[ "res://.import/backgroundoff.png-aa8e8ccbf3b3b2fe2eb6b102c7cd5881.stex" ]
+source_file="res://Assets/Sprites/backgroundon.png"
+dest_files=[ "res://.import/backgroundon.png-aa5fa96295c5cdec6f9c846a09561323.stex" ]
 
 [params]
 
