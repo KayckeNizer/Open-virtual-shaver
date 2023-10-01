@@ -27,7 +27,7 @@ func _on_TouchScreenButton_pressed():
 				Input.vibrate_handheld(500)
 			
 			self.normal = preload("res://Assets/Sprites/buttonon.png")
-			self.pressed = preload("res://Assets/Sprites/buttonoff.png")
+			self.button_pressed = preload("res://Assets/Sprites/buttonoff.png")
 			
 			pressed_button = true
 			shaving = true
@@ -37,7 +37,7 @@ func _on_TouchScreenButton_pressed():
 			get_parent().get_node("background/animation_on").play("turn_off")
 			
 			self.normal = preload("res://Assets/Sprites/buttonoff.png")
-			self.pressed = preload("res://Assets/Sprites/buttonon.png")
+			self.button_pressed = preload("res://Assets/Sprites/buttonon.png")
 			
 			vib_duration = 0.5
 			pressed_button = false

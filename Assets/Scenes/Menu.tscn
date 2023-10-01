@@ -1,12 +1,12 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Assets/Fonts/Dynamicfont_body.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Assets/Fonts/Dynamicfont_body.tres" type="FontFile" id=1]
 [ext_resource path="res://Assets/Scripts/Menu.gd" type="Script" id=2]
 
-[sub_resource type="DynamicFontData" id=1]
+[sub_resource type="FontFile" id=1]
 font_path = "res://Fonts/prstart.ttf"
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="FontFile" id=2]
 size = 70
 font_data = SubResource( 1 )
 
@@ -20,10 +20,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -540.0
-margin_top = -960.0
-margin_right = 540.0
-margin_bottom = 960.0
+offset_left = -540.0
+offset_top = -960.0
+offset_right = 540.0
+offset_bottom = 960.0
 color = Color( 0, 0, 0, 0.584314 )
 
 [node name="Panel" type="Panel" parent="Black_Background"]
@@ -31,19 +31,19 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -392.0
-margin_top = -697.0
-margin_right = 392.0
-margin_bottom = 697.0
+offset_left = -392.0
+offset_top = -697.0
+offset_right = 392.0
+offset_bottom = 697.0
 
 [node name="Text_Settings" type="Label" parent="Black_Background/Panel"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -392.0
-margin_top = 76.0
-margin_right = 392.0
-margin_bottom = 151.0
-custom_fonts/font = SubResource( 2 )
+offset_left = -392.0
+offset_top = 76.0
+offset_right = 392.0
+offset_bottom = 151.0
+theme_override_fonts/font = SubResource( 2 )
 text = "SETTINGS"
 align = 1
 valign = 1
@@ -53,11 +53,11 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -444.0
-margin_top = -283.0
-margin_right = 444.0
-margin_bottom = -34.0
-custom_fonts/font = ExtResource( 1 )
+offset_left = -444.0
+offset_top = -283.0
+offset_right = 444.0
+offset_bottom = -34.0
+theme_override_fonts/font = ExtResource( 1 )
 text = "Credits:
 Kaycke Nizer
 kaycke@protonmail.com"
@@ -67,11 +67,11 @@ valign = 1
 [node name="Text_shaving_mode" type="Label" parent="Black_Background/Panel"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -444.0
-margin_top = 138.0
-margin_right = 444.0
-margin_bottom = 387.0
-custom_fonts/font = ExtResource( 1 )
+offset_left = -444.0
+offset_top = 138.0
+offset_right = 444.0
+offset_bottom = 387.0
+theme_override_fonts/font = ExtResource( 1 )
 text = "Shaving button mode:"
 align = 1
 valign = 1
@@ -79,11 +79,11 @@ valign = 1
 [node name="Text_Vibration_mode" type="Label" parent="Black_Background/Panel"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -444.0
-margin_top = 438.0
-margin_right = 444.0
-margin_bottom = 687.0
-custom_fonts/font = ExtResource( 1 )
+offset_left = -444.0
+offset_top = 438.0
+offset_right = 444.0
+offset_bottom = 687.0
+theme_override_fonts/font = ExtResource( 1 )
 text = "Vibration:"
 align = 1
 valign = 1
@@ -91,22 +91,22 @@ valign = 1
 [node name="Change_mode_Button" type="Button" parent="Black_Background/Panel"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -346.0
-margin_top = 327.0
-margin_right = 346.0
-margin_bottom = 479.0
-custom_fonts/font = ExtResource( 1 )
+offset_left = -346.0
+offset_top = 327.0
+offset_right = 346.0
+offset_bottom = 479.0
+theme_override_fonts/font = ExtResource( 1 )
 text = "Keep Pressed"
-icon_align = 1
+icon_alignment = 1
 
 [node name="Vibration_mode_Button" type="Button" parent="Black_Background/Panel"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -346.0
-margin_top = 618.0
-margin_right = 346.0
-margin_bottom = 770.0
-custom_fonts/font = ExtResource( 1 )
+offset_left = -346.0
+offset_top = 618.0
+offset_right = 346.0
+offset_bottom = 770.0
+theme_override_fonts/font = ExtResource( 1 )
 text = "ON"
 
 [connection signal="pressed" from="Black_Background/Panel/Change_mode_Button" to="." method="_on_Change_mode_Button_pressed"]
